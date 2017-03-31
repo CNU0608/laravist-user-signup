@@ -62,4 +62,12 @@ public function store(){
 }
 ```
 
+php artisan make:request UserSignUpRequest
+
+
+
+
+
+
+
 
