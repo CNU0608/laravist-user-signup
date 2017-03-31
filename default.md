@@ -109,5 +109,3 @@ Route::get('/success', function(){
 cd database/
 sqlite3 database.sqlite
 select * from users
-
-
