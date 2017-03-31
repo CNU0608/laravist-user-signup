@@ -96,6 +96,15 @@ public function store(UserSignUpRequest $request){
 }
 ```
 
+web.php
+```
+Route::post('/register', 'UserController@store');
+
+Route::get('/success', function(){
+    return 'Registered Success';
+});
+```
+
 
 
 
