@@ -64,7 +64,13 @@ public function store(){
 
 php artisan make:request UserSignUpRequest
 
-
+UserSignUpRequest.php
+```
+public function authorize()
+{
+    return true;
+}
+```
 
 
 
