@@ -11,7 +11,7 @@ php artisan make:controller UserController
 
 web.php
 ```
-Route::post('/register', 'UsersController@store');
+Route::post('/register', 'UserController@store');
 ```
 
 welcome.blade.php
