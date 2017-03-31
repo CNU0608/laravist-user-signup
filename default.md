@@ -81,6 +81,20 @@ public function rules()
 }
 ```
 
+UserController.php
+```
+public function store(UserSignUpRequest $request){
+    $data = [
+        'name' => $request->get('name'),
+        'email' => $request->get('email'),
+        'password' => bcrypt($request->get('password'))
+    ];
+
+    User::create($data);
+
+    return redirect('/success');
+}
+```
 
 
 
