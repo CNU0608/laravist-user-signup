@@ -52,4 +52,12 @@ welcome.blade.php
 </html>
 ```
 
-
+UserController.php
+```
+public function store(){
+    // 接收表单数据
+    // 验证数据
+    // 保存数据到数据库
+    // 发送邮件
+}
+```
