@@ -10,3 +10,7 @@ php artisan make:controller UserController --resource
 php artisan make:controller UserController
 
 
+web.php
+```
+Route::post('/register', 'UsersController@store');
+```
