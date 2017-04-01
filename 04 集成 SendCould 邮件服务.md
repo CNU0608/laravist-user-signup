@@ -67,7 +67,8 @@ protected function sendTo($user, $subject, $view, $data = [])
             'method'  => 'POST',
             'header'  => 'Content-Type: application/x-www-form-urlencoded',
             'content' => $sendData
-        ]];
+        ]
+    ];
     $context = stream_context_create($options);
 
     return file_get_contents($this->url, FILE_TEXT, $context);
