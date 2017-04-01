@@ -4,7 +4,7 @@
 
 ![](image/screenshot_1491031240131.png)
 
-![](image/screenshot_1491031301462.png)
+![](image/screenshot_1491031439327.png)
 
 编辑模板 源码
 ```
