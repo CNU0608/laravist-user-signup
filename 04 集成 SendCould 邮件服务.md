@@ -64,3 +64,4 @@ protected function sendTo($user, $subject, $view, $data = [])
     return file_get_contents($this->url, FILE_TEXT, $context);
 }
 ```
+
