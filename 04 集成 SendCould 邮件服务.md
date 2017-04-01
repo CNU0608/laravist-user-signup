@@ -74,3 +74,4 @@ protected function sendTo($user, $subject, $view, $data = [])
 }
 ```
 
+
