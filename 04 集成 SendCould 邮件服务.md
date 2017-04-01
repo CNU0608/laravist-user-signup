@@ -76,5 +76,14 @@ protected function sendTo($user, $subject, $view, $data = [])
 
 app/Mailer/UserMailer.php
 ```
-
+/**
+ * @param $user
+ */
+public function welcome($user)
+{
+    $subject = 'welcome 邮箱确认';
+    $view = 'welcome';
+    $data = ['%name%' => [$user->name],'%token%' => [str_random(40)]];
+    $this->sendTo($user, $subject, $view, $data);
+}
 ```
