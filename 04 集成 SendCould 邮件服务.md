@@ -3,3 +3,4 @@
 注册SendCould账号，创建邮件模板
 
 ![](image/screenshot_1491031240131.png)
+
