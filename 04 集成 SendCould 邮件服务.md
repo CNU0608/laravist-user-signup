@@ -2,7 +2,7 @@
 
 注册SendCould账号，创建邮件模板
 
-![](image/screenshot_1491031240131.png)
+![](image/screenshot_1491031471627.png)
 
 ![](image/screenshot_1491031439327.png)
 
