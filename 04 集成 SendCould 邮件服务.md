@@ -37,4 +37,30 @@ SendCould继承到Laravel
 参考文档：
 >https://gist.github.com/JellyBool/9a518192c8ce6f325b8fcb09c93cdaac
 
+app/Mailer/Mailer.php
+```
+protected function sendTo($user, $subject, $view, $data = [])
+{
+    $vars = json_encode(['to' => [$user->email], 'sub' => $data]);
+    $param = [
+        'apiUser'            => env('SENDCLOUD_API_USER'), # 使用api_user和api_key进行验证
+        'apiKey'             => env('SENDCLOUD_API_KEY'),
+        'from'               => env('MAIL_FROM_ADDRESS'), # 发信人，用正确邮件地址替代
+        'fromName'           => env('MAIL_FROM_NAME'),
+        'xsmtpapi'           => $vars,
+        'subject'            => $subject,
+        'templateInvokeName' => $view,
+        'respEmailId'        => 'true'
+    ];
+    $sendData = http_build_query($param);
+    $options = [
+        'http' => [
+            'method'  => 'POST',
+            'header'  => 'Content-Type: application/x-www-form-urlencoded',
+            'content' => $sendData
+        ]];
+    $context = stream_context_create($options);
 
+    return file_get_contents($this->url, FILE_TEXT, $context);
+}
+```
