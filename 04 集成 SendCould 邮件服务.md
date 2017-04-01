@@ -2,7 +2,16 @@
 
 .env
 ```
-
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.163.com
+MAIL_PORT=465
+MAIL_USERNAME=jiezeal@163.com
+MAIL_PASSWORD=Internet678
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS=jiezeal@163.com
+MAIL_FROM_NAME='jiezeal'
+SENDCLOUD_API_USER=zhulinjie_test_2vMozD
+SENDCLOUD_API_KEY=jirEscO0Pr9Eoils
 ```
 
 注册SendCould账号，创建邮件模板
