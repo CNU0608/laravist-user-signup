@@ -41,6 +41,13 @@ app/Mailer/Mailer.php
 ```
 protected $url = 'http://api.sendcloud.net/apiv2/mail/sendtemplate';
 
+/**
+ * @param $user
+ * @param $subject
+ * @param $view
+ * @param array $data
+ * @return string
+ */
 protected function sendTo($user, $subject, $view, $data = [])
 {
     $vars = json_encode(['to' => [$user->email], 'sub' => $data]);
