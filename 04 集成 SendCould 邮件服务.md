@@ -18,3 +18,4 @@
 
 <p>链接：&nbsp; <a href="http://signup.dev/verify/token/%token%" target="_blank">点击激活</a></p>
 ```
+
