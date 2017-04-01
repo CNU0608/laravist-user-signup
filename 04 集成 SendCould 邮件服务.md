@@ -89,4 +89,4 @@ public function welcome($user)
     $this->sendTo($user, $subject, $view, $data);
 }
 ```
-通过浏览器注册一个用户
+通过浏览器注册一个用户，看看邮件是否发送成功
