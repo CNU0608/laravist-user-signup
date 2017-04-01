@@ -81,6 +81,7 @@ app/Mailer/UserMailer.php
  */
 public function welcome($user)
 {
+    // subject的设置需要跟SendCould上邮件标题一致
     $subject = 'welcome 邮箱确认';
     $view = 'welcome';
     $data = ['%name%' => [$user->name],'%token%' => [str_random(40)]];
