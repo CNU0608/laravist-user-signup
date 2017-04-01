@@ -74,4 +74,7 @@ protected function sendTo($user, $subject, $view, $data = [])
 }
 ```
 
+app/Mailer/UserMailer.php
+```
 
+```
